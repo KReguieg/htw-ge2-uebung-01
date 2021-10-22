@@ -26,6 +26,7 @@ public class CubeSpawner : MonoBehaviour
     {
         for (int i = 0; i < amount; i++)
         {
+            // Verteilung streuen
             GameObject.Instantiate(this.cubePrefab);
         }
     }
