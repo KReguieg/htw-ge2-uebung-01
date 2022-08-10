@@ -1,19 +1,19 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
+//using UnityEngine.InputSystem;
 
 public class CatchFireAction : MonoBehaviour
 {
-    public InputActionReference fire;
+    //public InputActionReference fire;
 
     private void OnEnable()
     {
-        fire.action.performed += Fire_performed;
+        //fire.action.performed += Fire_performed;
     }
 
-    private void Fire_performed(InputAction.CallbackContext obj)
-    {
-        Debug.Log("Fire pressed!");
-    }
+    //private void Fire_performed(InputAction.CallbackContext obj)
+    //{
+    //    Debug.Log("Fire pressed!");
+    //}
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +29,6 @@ public class CatchFireAction : MonoBehaviour
 
     private void OnDisable()
     {
-        fire.action.performed -= Fire_performed;
+        //fire.action.performed -= Fire_performed;
     }
 }
